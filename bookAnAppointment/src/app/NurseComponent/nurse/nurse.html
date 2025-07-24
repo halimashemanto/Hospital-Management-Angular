@@ -1,0 +1,48 @@
+
+<div class="" style="background-color: rgb(199, 247, 231);">
+    <h1 class="my-2 text-center" style="background-color:  rgb(234, 244, 176);">List Of Nurse</h1>
+    <table class="table table-striped ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Contact Number</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Photo</th>
+                <th>Specialization</th>
+                <th>Date of Birth</th>
+                
+                <th>Action</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let n of nurse | async">
+                <td>{{n.id}}</td>
+                <td>{{n.name}}</td>
+                <td>{{n.email}}</td>
+                <td>{{n.phone}}</td>
+                <td>{{n.gender}}</td>
+                <td>{{n.address}}</td>
+                <td>{{n.photo}}</td>
+                <td>{{n.specialization}}</td>
+                <td>{{n.bod}}</td>
+                <td>
+                     <button class="btn btn-warning m-1 p-1" (click)="getNurseById(n.id)">Edit</button>
+                    <button class="btn btn-danger m-1 p-1" (click)="deleteNurse(n.id)">Delete</button>
+
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+

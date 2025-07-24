@@ -1,0 +1,241 @@
+<div class="container">
+
+    <h3>Create Patient Prescription</h3>
+
+    <!-- Search Patient -->
+    <div class="row my-3">
+        <div class="col-md-4">
+            <input [(ngModel)]="searchPhone" class="form-control" placeholder="Search by Phone">
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" (click)="findPatient()">Search</button>
+        </div>
+        <div class="col-md-6">
+            <span class="text-success">{{ patientStatus }}</span>
+        </div>
+    </div>
+
+    <!-- Patient Info -->
+    <div class="card p-3 mb-3">
+        <input [(ngModel)]="prescription.patientId.name" class="form-control mb-2" placeholder="Patient Name">
+        <input [(ngModel)]="prescription.patientId.age" class="form-control mb-2" placeholder="Age">
+        <input [(ngModel)]="prescription.patientId.gender" class="form-control mb-2" placeholder="Gender">
+        <input [(ngModel)]="prescription.patientId.address" class="form-control" placeholder="Address">
+    </div>
+
+
+    <!-- hight bp others Info -->
+    <div class="card p-3 mb-3">
+        <input [(ngModel)]="prescription.height" type="text" class="form-control mb-2" placeholder="Height">
+
+        <input [(ngModel)]="prescription.weight" type="text" class="form-control mb-2" placeholder="Weight">
+        <input [(ngModel)]="prescription.bp" type="text" class="form-control mb-2" placeholder="Blood-Pressure">
+
+        <div>
+            <input [(ngModel)]="prescription.note" type="text" class="form-control mb-2" placeholder="Notes">
+
+            <input [(ngModel)]="prescription.advice" type="text" class="form-control mb-2" placeholder="Advice">
+
+        </div>
+    </div>
+
+    <!-- Doctor Dropdown -->
+    <div class="card p-3 mb-3">
+        <label for="doctorSelect">Created By</label>
+        <select [(ngModel)]="prescription.doctorId" class="form-control" id="doctorSelect">
+            <option *ngFor="let doc of doctors" [ngValue]="doc">{{ doc.name }}</option>
+        </select>
+    </div>
+
+  
+    <!-- Test Items -->
+    <div class="card p-3 mb-3" style="position: relative;">
+        <h5>Tests</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Test Name</th>
+
+                    <th><button class="btn btn-success btn-sm" (click)="addTest()">+ Add</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let test of prescription.tests; let i = index" style="position: relative;">
+                    <td style="position: relative;">
+                        <input [(ngModel)]="test.testName" name="testName{{i}}" class="form-control"
+                            (input)="onTestNameInput(test.testName, i)" autocomplete="off" />
+                        <ul class="list-group" *ngIf="testSuggestions[i]?.length"
+                            style="position: absolute; z-index: 1000; background: white; width: 100%; max-height: 150px; overflow-y: auto; padding-left: 0; margin-top: 0;">
+                            <li class="list-group-item list-group-item-action" *ngFor="let s of testSuggestions[i]"
+                                (click)="onSelectTest(s, i)" style="cursor: pointer;">
+                                {{ s.testName }}
+                            </li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-danger btn-sm" (click)="removeTest(i)">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- medicine item -->
+
+   <div class="card p-3 mb-3" style="position: relative;">
+        <h5>Medecine</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Medicine Name</th>
+                    <th>When/How to apply</th>
+                    <th><button class="btn btn-success btn-sm" (click)="addMedecine()">+ Add</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let m of prescription.medicines; let i = index" style="position: relative;">
+                    <td style="position: relative;">
+                        <input [(ngModel)]="m.medicineName" name="medicineName{{i}}" class="form-control"
+                            (input)="onMedecineNameInput(m.medicineName, i)" autocomplete="off" />
+                        <ul class="list-group" *ngIf="medicineSuggestions[i]?.length"
+                            style="position: absolute; z-index: 1000; background: white; width: 100%; max-height: 150px; overflow-y: auto; padding-left: 0; margin-top: 0;">
+                            <li class="list-group-item list-group-item-action" *ngFor="let m of medicineSuggestions[i]"
+                                (click)="onSelectMedecine(m, i)" style="cursor: pointer;">
+                                {{ m.medicineName }} - {{ m.applyWay }}
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <input [(ngModel)]="m.applyWay" class="form-control" type="text"
+                            />
+                    </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" (click)="removeMedecine(i)">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button class="btn btn-primary" (click)="submitPrescription()">Submit Prescription</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+for invoice print  -->
+
+
+<div id="invoiceToPrint"
+    style="display:none; padding:30px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#333; max-width:700px; margin:auto; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); background-color: #fff;">
+    <h2 style="text-align:center; color:#ce1380; margin-bottom:5px;">Health Care of Bangladesh</h2>
+    <h4 style="text-align:center; margin-top:0; margin-bottom:20px; font-weight: normal; color: #87a6eb;">Patient
+        Prescription</h4>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+        <div>
+            <p><strong>Patient Name:</strong> {{ prescription.patientId.name }}</p>
+            <p><strong>Contact:</strong> {{ prescription.patientId.contact }}</p>
+            <p><strong>Age:</strong> {{ prescription.patientId.age }}</p>
+            <p><strong>Gender:</strong> {{ prescription.patientId.gender }}</p>
+        </div>
+        <div>
+            <p><strong>Created By:</strong> {{ prescription.doctorId.name }}</p>
+            <p><strong>Date:</strong> {{ prescription.date | date:'mediumDate' }}</p>
+        </div>
+    </div>
+    <!-- height weight bp -->
+
+    <table width="100%" cellspacing="0" cellpadding="8"
+        style="border-collapse: collapse; margin-top: 20px; font-size: 14px;">
+        <thead style="background-color:#f2f2f2; border-bottom: 2px solid #007b5e;">
+            <tr>
+                <th style="text-align:left; border: 1px solid #ddd;">Height</th>
+                <th style="text-align:left; border: 1px solid #ddd;">Weight </th>
+                <th style="text-align:left; border: 1px solid #ddd;">Blood-Pressure </th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr style="border-bottom: 1px solid #eee;">
+                <td style="border: 1px solid #ddd;">{{ prescription.height }}</td>
+                <td style="border: 1px solid #ddd;">{{ prescription.weight }}</td>
+                <td style="border: 1px solid #ddd;">{{ prescription.bp }}</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+<!-- advice notes -->
+
+    <table width="100%" cellspacing="0" cellpadding="8"
+        style="border-collapse: collapse; margin-top: 20px; font-size: 14px;">
+        <thead style="background-color:#f2f2f2; border-bottom: 2px solid #007b5e;">
+            <tr>
+                <th style="text-align:left; border: 1px solid #ddd;">Advice</th>
+                <th style="text-align:left; border: 1px solid #ddd;">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr style="border-bottom: 1px solid #eee;">
+
+                <td style="border: 1px solid #ddd;">{{ prescription.advice }}</td>
+
+                <td style="border: 1px solid #ddd;">{{ prescription.note }}</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+<!-- medicine -->
+<table width="100%" cellspacing="0" cellpadding="8" style="border-collapse: collapse; margin-top: 20px; font-size: 14px;">
+    <thead style="background-color:#f2f2f2; border-bottom: 2px solid #007b5e;">
+      <tr>
+        <th style="text-align:left; border: 1px solid #ddd;">Medicine Name</th>
+        <th style="text-align:left; border: 1px solid #ddd;">Apply Way</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of prescription.medicines" style="border-bottom: 1px solid #eee;">
+        <td style="border: 1px solid #ddd;">{{ m.medicineName }}</td>
+        <td style="text-align:left; border: 1px solid #ddd;">{{ m.applyWay }}</td>
+      </tr>
+    </tbody>
+  </table>
+   
+    <!-- test  -->
+    <table width="100%" cellspacing="0" cellpadding="8"
+        style="border-collapse: collapse; margin-top: 20px; font-size: 14px;">
+        <thead style="background-color:#f2f2f2; border-bottom: 2px solid #007b5e;">
+            <tr>
+                <th style="text-align:left; border: 1px solid #ddd;">Test Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let test of prescription.tests" style="border-bottom: 1px solid #eee;">
+
+                <td style="border: 1px solid #ddd;">{{ test.testName }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+</div>

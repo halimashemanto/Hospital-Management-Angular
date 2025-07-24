@@ -1,0 +1,87 @@
+
+<div class=" my-3 container">
+    <div class="bg-info text-center">
+
+        <h1 class="jumborton" style="background-color: rgb(245, 180, 180);">Create REport </h1>
+    </div>
+
+    <form  [formGroup]="reportGroup" method="post">
+    
+        <div class="row">
+
+            <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">Report Create Date</label>
+                <input type="date" class="form-control" id="createDate" formControlName="createDate">
+            </div>
+            
+            <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">Test Date</label>
+                <input type="date" class="form-control" id="testDate" formControlName="testDate">
+            </div>
+            
+            <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">Report Delivery Date from Doctor</label>
+                <input type="date" class="form-control" id="deliveryDate" formControlName="deliveryDate">
+            </div>
+
+        </div>
+      <div class="row">
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Patient Name</label>
+                <input type="text" class="form-control" id="note" formControlName="patientName">
+            </div>
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" formControlName="description">
+            </div>
+           
+        </div>
+
+
+        <div class="row">
+             <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">Sample Id</label>
+                <input type="text" class="form-control" id="sampleId" formControlName="name" sampleId>
+            </div>
+
+            <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">Interpretation</label>
+                <input type="text" class="form-control" id="interpretation" formControlName="interpretation">
+            </div>
+            <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">Report Result</label>
+                <input type="text" class="form-control" id="reportResult" formControlName="reportResult">
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Prepared By Dr.</label>
+                <input type="text" class="form-control" id="address" formControlName="doctorName">
+            </div>
+
+            
+        </div>
+
+
+
+<!-- button -->
+
+        <div class="row mt-3 text-center">
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-success text-center" (click)="addReport()">Print</button>
+
+            </div>
+
+            <div class="col-md-6">
+                <button type="reset" class="btn btn-danger text-center">Reset</button>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>
+

@@ -1,0 +1,42 @@
+<div class="container mt-4" style="background-color: rgb(185, 216, 241);">
+  <h3 style="background-color: rgb(252, 199, 249);">Add Doctor</h3>
+
+  <form [formGroup]="doctorForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input type="text" formControlName="name" class="form-control" placeholder="Enter doctor's name">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Designation</label>
+      <input type="text" formControlName="designation" class="form-control" placeholder="Consultant, Specialist, etc.">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Degree</label>
+      <input type="text" formControlName="degree" class="form-control" placeholder="MBBS, FCPS, etc.">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Photo URL</label>
+      <input type="text" formControlName="photo" class="form-control" placeholder="http://example.com/photo.jpg">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Schedule</label>
+      <input type="text" formControlName="schedule" class="form-control" placeholder="Mon, Wed, Fri: 10 AM - 1 PM">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Department</label>
+      <select formControlName="departmentId" class="form-select">
+        <option value="">-- Select Department --</option>
+        <option *ngFor="let dept of departments" [value]="dept.id">
+          {{ dept.name }}
+        </option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Doctor</button>
+  </form>
+</div>

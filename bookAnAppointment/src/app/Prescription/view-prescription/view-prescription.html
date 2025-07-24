@@ -1,0 +1,49 @@
+
+<div class="" style="background-color: rgb(199, 247, 231);">
+    <h1 class="my-2 text-center" style="background-color:  rgb(231, 182, 212);">Prescription Data</h1>
+    <table class="table table-striped ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Contact Number</th>
+                <th>Address</th>
+                <th>Date</th>
+                <th>Gender</th>
+                <th>Notes</th>
+                <th>Advice</th>
+                
+                
+                <th>Action</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let p of prescription | async">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.age}}</td>
+                <td>{{p.phone}}</td>
+                <td>{{p.address}}</td>
+                 <td>{{p.gender}}</td>
+                <td>{{p.date}}</td>  
+                 <td>{{p.note}}</td>
+                <td>{{p.advice}}</td>
+                <td>
+                     <button class="btn btn-warning m-1 p-1" (click)="getPrescriptionById(p.id)">Edit</button>
+                    <button class="btn btn-danger m-1 p-1" (click)="deletePrescription(p.id)">Delete</button>
+
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+

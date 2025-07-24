@@ -1,0 +1,71 @@
+<div class=" container col-md-6 mt-8 text-center" style="background-color: rgb(114, 170, 235);">
+    <h3 class="" style=" background-color: rgb(255, 127, 227);">Book Appointment</h3>
+
+    <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+
+        <!-- Department Dropdown -->
+        <div class="row">
+            <div class="col-md-6">
+                <label class="form-label"><b>Department</b></label>
+                <select class="form-select" formControlName="departmentId" (change)="loadDoctors()">
+                    <option value="">-- Select Department --</option>
+                    <option *ngFor="let dept of departments" [value]="dept.id">{{ dept.name }}</option>
+                </select>
+            </div>
+
+            <!-- Doctor Dropdown -->
+            <div class="col-md-6">
+                <label class="form-label"><b>Doctor</b></label>
+                <select class="form-select" formControlName="doctorId" (change)="loadSlots()">
+                    <option value="">-- Select Doctor --</option>
+                    <option *ngFor="let doc of doctors" [value]="doc.id">{{ doc.name }}</option>
+                </select>
+            </div>
+            </div>
+
+             <div class="row">
+            <!-- Schedule Slot Dropdown -->
+            <div class="col-md-6">
+                <label class="form-label"><b>Available Schedule Slots</b></label>
+                <select class="form-select" formControlName="scheduleSlotId">
+                    <option value="">-- Select Slot --</option>
+                    <option *ngFor="let slot of slots" [value]="slot.id">
+                        {{ slot.date }} {{ slot.startTime }} – {{ slot.endTime }}
+                    </option>
+                </select>
+            </div>
+
+            <!-- Patient Name -->
+            <div class="col-md-6">
+                <label class="form-label"><b>Patient Name</b></label>
+                <input type="text" class="form-control" placeholder="Enter patient name" formControlName="patientName">
+            </div>
+            
+        </div>
+
+
+        <div class="row">
+
+            <!-- Patient Contact -->
+            <div class="col-md-6">
+                <label class="form-label"><b>Contact Number</b></label>
+                <input type="text" class="form-control" placeholder="Enter contact" formControlName="patientContact">
+            </div>
+
+
+            <!-- Reason -->
+            <div class="col-md-6">
+                <label class="form-label"><b>Reason</b></label>
+                <textarea class="form-control" rows="3" placeholder="Enter reason (optional)"
+                    formControlName="reason"></textarea>
+            </div> <br>
+
+        </div>
+
+
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn-success" style="background-color: rgb(11, 58, 21);">Book
+            Appointment</button>
+    </form>
+</div>

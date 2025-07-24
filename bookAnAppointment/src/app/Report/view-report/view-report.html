@@ -1,0 +1,49 @@
+<div class="" style="background-color: rgb(83, 188, 236);">
+    <h1 class="my-2 text-center" style="background-color:  rgb(231, 182, 212);">List of Report </h1>
+    <table class="table table-striped ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Patient Name</th>
+                <th>Test Date</th>
+                <th>Report Create Date</th>
+                <th>Interpretation</th>
+                <th>Sample Id</th>
+                <th>Description</th>
+                <th>Report Result</th>
+                <th>Prepared by Doctor Name</th>
+                <th>Delivery Date</th>
+
+
+                <th>Action</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let p of re | async">
+                <td>{{p.id}}</td>
+                <td>{{p.patientName}}</td>
+                <td>{{p.testDate}}</td>
+                <td>{{p.createDate}}</td>
+                <td>{{p.interpretation}}</td>
+                <td>{{p.sampleId}}</td>
+                <td>{{p.description}}</td>
+                <td>{{p.reportResult}}</td>
+                <td>{{p.doctorName}}</td>
+                <td>{{p.deliveryDate}}</td>
+                <td>
+                    <button class="btn btn-warning m-1 p-1">Edit</button>
+                    <button class="btn btn-danger m-1 p-1" >Delete</button>
+
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

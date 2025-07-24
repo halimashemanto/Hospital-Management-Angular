@@ -1,0 +1,50 @@
+<div class="" style="background-color: rgb(199, 247, 231);">
+    <h1 class="my-2 text-center" style="background-color:  rgb(234, 244, 176);">Patient List</h1>
+    <table class="table table-striped ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Contact Number</th>
+                <th>Date</th>
+                <th>Gender</th>
+                <th>address</th>
+                <th>reason</th>
+                <th>status</th>
+                <th>department</th>
+                <th>doctorName</th>
+                <th>Action</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let b of patients | async">
+                <td>{{b.id}}</td>
+                <td>{{b.name}}</td>
+                <td>{{b.age}}</td>
+                <td>{{b.contact}}</td>
+                <td>{{b.date}}</td>
+                <td>{{b.gender}}</td>
+                <td>{{b.address}}</td>
+                <td>{{b.reason}}</td>
+                <td>{{b.status}}</td>
+                <td>{{b.department}}</td>
+                <td>{{b.doctorName}}</td>
+                <td>
+                     <button class="btn btn-warning m-1 p-1" (click)="getPatientById(b.id)">Edit</button>
+                    <button class="btn btn-danger m-1 p-1" (click)="deletePatient(b.id)">Delete</button>
+
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+

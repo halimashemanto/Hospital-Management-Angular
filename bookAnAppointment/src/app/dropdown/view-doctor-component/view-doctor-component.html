@@ -1,0 +1,35 @@
+<div class="container mt-4" style="background-color: skyblue;">
+  <h3 style="background-color: rgb(245, 200, 235);">Doctors List</h3>
+
+  <!-- Filter Dropdown -->
+  <div class="mb-4">
+    <label class="form-label">Filter by Department</label>
+    <select [(ngModel)]="selectedDepartment" (change)="filterByDepartment()" class="form-select">
+      <option value="">-- All Departments --</option>
+      <option *ngFor="let dept of departments" [value]="dept.id">
+        {{ dept.name }}
+      </option>
+    </select>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let doctor of filteredDoctors">
+      <div class="card h-100">
+        <img [src]="doctor.photo" class="card-img-top" alt="{{ doctor.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ doctor.name }}</h5>
+          <p class="card-text">
+            <strong>Designation:</strong> {{ doctor.designation }}<br>
+            <strong>Degree:</strong> {{ doctor.degree }}<br>
+            <strong>Schedule:</strong> {{ doctor.schedule }}
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm btn-primary" (click)="editDoctor(doctor.id!)">Edit</button>
+          <button class="btn btn-sm btn-danger" (click)="deleteDoctor(doctor.id!)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

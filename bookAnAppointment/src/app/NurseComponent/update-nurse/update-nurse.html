@@ -1,0 +1,72 @@
+<div class=" container">
+    <div class="bg-info text-center">
+
+        <h1 class="jumborton" style="background-color: rgb(179, 238, 248);">Edit Nurse Profile </h1>
+    </div>
+
+    <form *ngIf="nurse" (ngSubmit)="updateNurse()">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" >Name</label>
+                <input type="text" class="form-control" class="form-control" id="name" name="name" [(ngModel)]="nurse.name">
+            </div>
+
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="email" name="email" [(ngModel)]="nurse.email">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="name" name="phone" [(ngModel)]="nurse.phone">
+            </div>
+
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="name" name="bod" [(ngModel)]="nurse.bod">
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Address</label>
+                <input type="text" class="form-control" id="name" name="address" [(ngModel)]="nurse.address">
+            </div>
+
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Photo</label>
+                <input type="text" class="form-control" id="name" name="photo" [(ngModel)]="nurse.photo">
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Specialization</label>
+                <input type="text" class="form-control" id="name" name="specialization" [(ngModel)]="nurse.specialization">
+            </div>
+
+            <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Gender</label>
+                <input type="text" class="form-control" id="name" name="gender" [(ngModel)]="nurse.gender">
+            </div>
+        </div>
+
+
+
+        <div class="row mt-3 text-center">
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-success text-center" (click)="updateNurse()">Save</button>
+
+            </div>
+
+            <div class="col-md-6">
+                <button type="reset" class="btn btn-danger text-center">Reset</button>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>

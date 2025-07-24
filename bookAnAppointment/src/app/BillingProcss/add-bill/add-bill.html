@@ -1,0 +1,134 @@
+<div class="container">
+
+    <h3>Create Test Invoice</h3>
+
+    <!-- Search Patient -->
+    <div class="row my-3">
+        <div class="col-md-4">
+            <input [(ngModel)]="searchPhone" class="form-control" placeholder="Search by Phone">
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" (click)="findPatient()">Search</button>
+        </div>
+        <div class="col-md-6">
+            <span class="text-success">{{ patientStatus }}</span>
+        </div>
+    </div>
+
+    <!-- Patient Info -->
+    <div class="card p-3 mb-3">
+        <input [(ngModel)]="invoice.patientId.name" class="form-control mb-2" placeholder="Patient Name">
+        <input [(ngModel)]="invoice.patientId.age" class="form-control mb-2" placeholder="Age">
+        <input [(ngModel)]="invoice.patientId.gender" class="form-control mb-2" placeholder="Gender">
+        <input [(ngModel)]="invoice.patientId.address" class="form-control" placeholder="Address">
+    </div>
+
+    <!-- Doctor Dropdown -->
+    <div class="card p-3 mb-3">
+        <label for="doctorSelect">Referred By</label>
+        <select [(ngModel)]="invoice.doctorId" class="form-control" id="doctorSelect">
+            <option *ngFor="let doc of doctors" [ngValue]="doc">{{ doc.name }}</option>
+        </select>
+    </div>
+
+    <!-- Test Items -->
+    <!-- Test Items -->
+    <div class="card p-3 mb-3" style="position: relative;">
+        <h5>Tests</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Test Name</th>
+                    <th>Price</th>
+                    <th><button class="btn btn-success btn-sm" (click)="addTest()">+ Add</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let test of invoice.tests; let i = index" style="position: relative;">
+                    <td style="position: relative;">
+                        <input [(ngModel)]="test.testName" name="testName{{i}}" class="form-control"
+                            (input)="onTestNameInput(test.testName, i)" autocomplete="off" />
+                        <ul class="list-group" *ngIf="testSuggestions[i]?.length"
+                            style="position: absolute; z-index: 1000; background: white; width: 100%; max-height: 150px; overflow-y: auto; padding-left: 0; margin-top: 0;">
+                            <li class="list-group-item list-group-item-action" *ngFor="let s of testSuggestions[i]"
+                                (click)="onSelectTest(s, i)" style="cursor: pointer;">
+                                {{ s.testName }} - ৳{{ s.testPrice }}
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <input [(ngModel)]="test.testPrice" class="form-control" type="number"
+                            (input)="calculateTotal()" />
+                    </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" (click)="removeTest(i)">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <strong>Total: ৳{{ invoice.amount }}</strong>
+    </div>
+
+
+    <!-- Payment Info -->
+    <div class="card p-3 mb-3">
+        <input [(ngModel)]="invoice.discount" type="number" class="form-control mb-2" placeholder="Discount"
+            (input)="calculateTotal()">
+        <input [(ngModel)]="invoice.received" type="number" class="form-control mb-2" placeholder="Received"
+            (input)="calculateTotal()">
+        <div>Due: {{ invoice.due }}</div>
+    </div>
+
+    <button class="btn btn-primary" (click)="submitInvoice()">Submit Invoice</button>
+
+</div>
+
+
+<!-- 
+for invoice print  -->
+
+
+<div id="invoiceToPrint" style="display:none; padding:30px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#333; max-width:700px; margin:auto; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); background-color: #fff;">
+  <h2 style="text-align:center; color:#007b5e; margin-bottom:5px;">Health Care of Bangladesh</h2>
+  <h4 style="text-align:center; margin-top:0; margin-bottom:20px; font-weight: normal; color: #444;">Diagnostic Test Invoice</h4>
+
+  <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+    <div>
+      <p><strong>Patient Name:</strong> {{ invoice.patientId.name }}</p>
+      <p><strong>Contact:</strong> {{ invoice.patientId.contact }}</p>
+      <p><strong>Age:</strong> {{ invoice.patientId.age }}</p>
+      <p><strong>Gender:</strong> {{ invoice.patientId.gender }}</p>
+    </div>
+    <div>
+      <p><strong>Referred By:</strong> {{ invoice.doctorId.name }}</p>
+      <p><strong>Invoice Date:</strong> {{ invoice.invoiceDate | date:'mediumDate' }}</p>
+    </div>
+  </div>
+
+  <table width="100%" cellspacing="0" cellpadding="8" style="border-collapse: collapse; margin-top: 20px; font-size: 14px;">
+    <thead style="background-color:#f2f2f2; border-bottom: 2px solid #007b5e;">
+      <tr>
+        <th style="text-align:left; border: 1px solid #ddd;">Test Name</th>
+        <th style="text-align:right; border: 1px solid #ddd;">Price (৳)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let test of invoice.tests" style="border-bottom: 1px solid #eee;">
+        <td style="border: 1px solid #ddd;">{{ test.testName }}</td>
+        <td style="text-align:right; border: 1px solid #ddd;">{{ test.testPrice }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="text-align:right; margin-top: 20px; font-size: 15px;">
+    <p><strong>Total: </strong>৳{{ invoice.amount }}</p>
+    <p><strong>Discount: </strong>৳{{ invoice.discount }}</p>
+    <p><strong>Payable: </strong>৳{{ invoice.payable }}</p>
+    <p><strong>Received: </strong>৳{{ invoice.received }}</p>
+    <p><strong>Due: </strong>৳{{ invoice.due }}</p>
+  </div>
+
+  <div style="margin-top: 40px;">
+    <p><strong>Prepared By:</strong> {{ invoice.preparedBy }}</p>
+  </div>
+</div>

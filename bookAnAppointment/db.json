@@ -1,0 +1,1877 @@
+{
+  "userModel": [
+    {
+      "id": "c466",
+      "name": "Akter Hossain",
+      "email": "akter@gmail.com",
+      "password": "akter",
+      "role": "Nurse"
+    },
+    {
+      "id": "fda7",
+      "name": "Atikqul Islam",
+      "email": "atik@gmail.com",
+      "password": "atik",
+      "role": "receptionist"
+    },
+    {
+      "id": "44bb",
+      "name": "MD. Emran Hossain",
+      "email": "na@gmail.com",
+      "password": "12345",
+      "role": "admin"
+    },
+    {
+      "id": "d367",
+      "name": "Suprova",
+      "email": "sup@gmail.com",
+      "password": "090909",
+      "role": "doctor"
+    },
+    {
+      "id": "d393",
+      "name": "imran",
+      "email": "imran@gmail.com",
+      "password": "123456",
+      "role": "nurse"
+    },
+    {
+      "id": "7915",
+      "name": "Rahim Khan",
+      "email": "rahim@gmail.com",
+      "password": "123456",
+      "role": "receptionist"
+    }
+  ],
+  "nurseModel": [
+    {
+      "id": "f18a",
+      "name": "Sehzil Munjir Arish",
+      "specialization": "Surgery",
+      "phone": "0147852369",
+      "email": "arish@gmail.com",
+      "bod": "2023-07-28",
+      "address": "dhaka",
+      "gender": "male",
+      "photo": "arish",
+      "role": "nurse"
+    },
+    {
+      "id": "3226",
+      "name": "Safwan Suhaib",
+      "specialization": "surgery",
+      "phone": "0123456789",
+      "email": "safu@gmail.com",
+      "bod": "2008-08-12",
+      "address": "Matuail,Dhaka",
+      "gender": "male",
+      "photo": "safwan",
+      "role": "nurse"
+    }
+  ],
+  "departments": [
+    {
+      "id": "a1f9",
+      "name": "Neourology"
+    },
+    {
+      "id": "04ea",
+      "name": "Urology"
+    },
+    {
+      "id": "2942",
+      "name": "Aurthopadic"
+    },
+    {
+      "id": "2eeb",
+      "name": "Surgery"
+    },
+    {
+      "id": "a057",
+      "name": "Pediatrics"
+    },
+    {
+      "id": "85ac",
+      "name": "Radiology"
+    },
+    {
+      "id": "0ad4",
+      "name": "Emergency Medicine"
+    },
+    {
+      "id": "6625",
+      "name": "Colorectal Surgeon"
+    },
+    {
+      "id": "c6a6",
+      "name": "Oncology"
+    },
+    {
+      "id": "993c",
+      "name": "Dermatology"
+    },
+    {
+      "id": "d3db",
+      "name": "Cardiology"
+    },
+    {
+      "id": "bd68",
+      "name": "Rheumatology"
+    },
+    {
+      "id": "a58f",
+      "name": "Optomalogy"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "a5ea",
+      "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+      "designation": "Senior Consultant",
+      "degree": "MBBS(DMCH)",
+      "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+      "schedule": "Mon,Wed,Sun",
+      "departmentId": "a1f9"
+    },
+    {
+      "id": "d005",
+      "name": "Dr. Md. Aminul Haque Palash",
+      "designation": "Consultant ",
+      "degree": "MBBS, BCS (Health), MD (Nephrology), MACP (USA), FCPS (Medicine, FP)",
+      "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Md.-Aminul-Haque-Palash.jpg",
+      "schedule": "sun-fri",
+      "departmentId": "a1f9"
+    },
+    {
+      "id": "ead5",
+      "name": "Dr. Tahmina Jannat",
+      "designation": "Consultant (General Surgery)",
+      "degree": "MBBS, MS (General surgery)",
+      "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Tahmina-Jannat.jpg",
+      "schedule": "sat-mon",
+      "departmentId": "85ac"
+    },
+    {
+      "id": "f31b",
+      "name": "Dr. Fariha Binte Quayum",
+      "designation": "Consultant",
+      "degree": "BDS, PGT, FCPS",
+      "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Fariha-Binte-Quayum.jpg",
+      "schedule": "mon, wed",
+      "departmentId": "04ea"
+    },
+    {
+      "id": "8b45",
+      "name": "Dr. Abu Md. Towab",
+      "designation": "Ex. Consultant ",
+      "degree": "MBBS, BCS (Health), MACP (USA), CCD (UK), MD (Cardiology)",
+      "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Abu-Md.-Towab.jpg",
+      "schedule": "Fri-Sun",
+      "departmentId": "85ac"
+    },
+    {
+      "id": "3b73",
+      "name": "Dr. Keya Rani Das",
+      "designation": "Consultant",
+      "degree": "MBBS, BCS (Health), DLO (ENT)",
+      "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Keya-Rani-Das.jpg",
+      "schedule": "wed",
+      "departmentId": "2942"
+    },
+    {
+      "id": "cf18",
+      "name": " Dr. Md. Shahidul Islam ",
+      "designation": "Urology Surgeon",
+      "degree": " MBBS  MS (Surgery) ",
+      "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA0gMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xAA7EAABBAEDAQYDBQYFBQAAAAABAAIDEQQFEiExBhMiQWFxMlGBBxSRobEjJFJywdFCYuHw8RUXMzRT/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAIhEBAQACAgICAgMAAAAAAAAAAAECEQMxEiEEMiJBBVFx/9oADAMBAAIRAxEAPwD1sBPCQBKrYQISFCRhBQgoBEhSqHKnbj48s8nwRsL3ewFpkyu0XaTTOz0bXajPte8XHCwW9/08vquV/wC7GkDIkhfgZYaCO7c3aS4fMixXPHUrzuaTUO1GrZs2NjZGRJITI7aOGgngXf5LOy9I1vDc8HRpQ3pZ54+izvJG84brp75oPafTNcwH5eLKY2xv2SsmoOY7qAfotYm+i+VjmajiSSd4MiBklbm2WgkdPqvafsg1/K1js1JDmOL5MGXuWyuNuc2rF+o6X6K8ctss8NO9JSJm60oVMjkwlKTSjLkFTXFMPCc5MPRMiEpHdEqa48IJG5QP6qZyheqZ1C5McOE93VIQhCrIxQOZSuvFqF7U02Ku0JVLtQml3gKVNCcFi9KEQlQkCIQmlMqCVV1HH+9YGTj/AP2icz8QrCZMCYyGmilejxm7Hmv2OhuDpWe/M7uJv3nuu9eQ3e4DkX6Lu9QEMsJkjMLx0ttEKk/QoMjS5McAYzHTSSlra4LjfUjhYGd2fh07sfkMx8xz+8ez9sB60ePPi1wZ3b1uLHTl/tBxoX4WWB3b5gwuDGUSKV77E2dx2Zy5ieZsxwHqGtaP1tU5OyrcEffYsiGWF4PIjbu5HzHNe6n7CbsLBkgj3NgZxtP8dkkj3W3x7J+McvzpdXK+no7cgHzUjZQVgxZXPVXYp78122PKmTTLwm2FXbLacHWlpW0hKaSjhCAS0x5TimFEKo3KNykco3JpRuCRPKYU06IQonNUyaQhKvtSKakJjTrwnhNCcsnbAhIUIMJpSppQREIQgtuf7SRzZOHkYmPMY5SQRR+LoaPoeiwe1GFnu0ruHauzGtrd0QA8JH8PC7DVtOlycf7zj02eP4SRYcPkR8lw/aLVtzSNQ0cGZopklWD7H+64eSeOVetwZ+WE25jEyM7H0+VmXNuaSBEw1Yq+SugxIRiYkUTW7TtBcD/F5rD0XBytW1dmRkRARROD3Mb8LQOl/wBl0+ZG5kzmuFEFdPxsZN2vO/kOTL1J0IXq/DIs2JXInLqeZK0o5OFYY9UI3KwxyTWVcaU61Cwp9paXspTSi01xQVIVGU8lRkoI13VCQ9U4dEEaghOISUmDKQn0hCXUhKmgoJWbsOSEptoQAhCmx4O9Nu+EfmgSbQDnpz7KvqXfN+7Y2O7ZkZUmxpP+BoFud9ADXqQtkNZGfCAB6ea57K1DDZ2pw45s3HjezGkG10jQWuc9vHoaCW2kw/t0TWiNrW3wG1Z9F5N297UafBn923RsiaNjwC7vO67++PCKNj14Xq0rN8Tm2SKvqvI/ti1BsepafGGh4w9uQ5tfFbrr8GpY4TO6qvO4TcdjocONm6ZBLiYzsWBzQXQObTmeh/us7tfhSQYrNSx3eHGcDOwc7oifER6jr+K7DTO6lwseWANEcsbXNoeRFrL7QY+K7TtVlEIJGNI3cel7TdJT8ehlJn25nN0vIw6ft72FwBbIwccqGN1cHj3XcaQwN0PBkkFvZisPudoVDXNME8Bka0DJaLtorcfVaTNycnxte8WDG5WYys2KT8fNW432rc8q+wp1qBj1JuCS4eSkKaHJbQZCmlKhANATqQhBEpCEiYCEloQTpkFCRZuoqVNS2gFWjC3ZGB6LOjI3t3dLWn5JVphP2z9eyX4ui5s8JqSOJxafkfJV9M0nGi02LHEbDG9gLw5gt5I5LjVkn5q/kt3QvaQKcCOU7HNwxE9S0fopaKPZt8rtGgE7Xtex0kY33e1r3Nbd+gC8v+0bSp9Q7cswa4zBCyI1/hPhP4UV63jNAga0fzWfmST/AFWXqukxZOvaTq7zzgCUn/NubQ/UqsMvG7Tljtowwx4kEGHAKZExrB6NAofos3tRx2e1FjGk/u0tBo5JLStaFh27n/GeSsXXcgY+ViSSYcmXAHubI2Jm8x2OHbfPzH1U2qjQw2j7phw9A2Jt38gFJO0ObQbe7jxfqsnT9QghOT3kUkOM17Qxr27aFC+PIX5LXJZkRCVryGHrXX2SmUqrjZNvPNTLcfVMiNhGzfba4sKSGW6UfbGSNmsRxwsDWti+ptxVLGmPC6Menl5zWVbkb1M11rPgltXY3cIKVOOiLTLRaSj0JAUWgFQUApCQgBB6JCUlpkEIQgOmQmbkWodR9pLTSUWgJIBvma31WofyWbhGshvqOFoPdxR4UVrx9M7WM/GwYmHLyI4BLII2GR1bnHoB6p+PN+7eLw+TLPVUte7x+mZBxYTPK1hLBtsbvJZmJjDFxGb6YWs/abRtv3pZZ8ni6OPi83Q6bkQ5OOX48rZWAlm5hsWDRH4qadv7A8XtIcB9Vz/ZWTDdlzRYUYjjhbYayMMbZPJofVdK53yFqsMvKbTyY+N0jlf3cRcGm1Qeycvc+Jh3OHhJ8loGR38F/VJ3jnVYpOzaZdXbFOn5UsgbI2hdg38Pr/Mtd8bI4msaLa0dAnPJDQQOnr+Sqzv2td4jQ/MKccJj7XnyXPt5329GzXI3iqfCCK+W4rJx5eif2rzjm63Jz4IQImews/qVSgfyunHp5fJ7ytbuPJ6rRhk4WFjyLRgkVM2pvT2lVI32rDSEjlSgpUzcltCodaElotBBCS0toGwlTbQgtuiBSpgKdah0ltNtFpLQKlxnbJ2X81oSNHI5JPXmhXusoGiFYmzQKoOd6AKco147+ltrrPH046/2RIyKUeNjXfMloKyZtQcfACyIHqL5P1SDIe6gJNrPQqG0XMXAwsTKnnxYxHNKBuAca49LofQJJs2SIndC94/yAFRRzBttZYc7q4qUPYG8mgOpS/wbtUpe0eDC6NuTKIHSEhjZfCTXWlO3U4ZACxwIPm0rhu00H/XcmCHGLJGRFxcasAn/AITtN0h2DHzI4urijQH0U+VX4zTtH6gG/C76FUdSzyInuLqaxhcfYcrBxYslk24zSlt9C4rkNWdNFqGVjmWTu+8Ph3miDz/VXjNsOXPwis57pZHSP+J5Lj7lTRFVwbUsfVbuDtowvV+F6y4vJXoSmlqRSeqtMes2Iq5G5AWwU4FRNKeEGkBRaYEqAdaLSWhACRJaVMnQApwKgDk8OUOhJaLTQhA2cSFJijdO0eSgJKs6a3dK8noG/wBUr0rH7RU1DCZK47m3apN00McC0uAroCulkhDlGYB8gs9OpiN0yUOtk0jR8tycdNyOQcmWiK8ltsYG2KSOA+SWj2wodOjw4QyJtNCjdFZ6dVq5PQD5lNbBGRZux8kaG2aYNosBeedqoxHrk1V4mtd+Vf0XqcrWtYvOu3cAj1WCVorvIaPuD/qqw7Yc/wBXPNU0Q5UTFNGtXItRFXIiqcQVuJNC5GVbjcqUassKCXGOUgKrMKmaUGlBTgeEwJUA+0hKbaa9yAW0KHclTJ0G5Pa5V9yXcpbbWg5LarB9J4elo9pSVe0oeGR3sszctbSv/XJPUuKWXTTj95LZUbuoT3FRnlyzdRfM+yic7q3zHmpHnk+yimJ7pAVZ+nLglb0oFJLzHyhhASBso8K4f7QI/BiSeYc5v+/wXcSG+i5Xt1Dv0oSeccgdX5Kse2fLN4VwbfJTxqBnQcKxEtXCsxK1Gq0asxppWWeSsMKrMUzCgLLCpmlVmlStcgllpTrUDXJ27hBpHOUTyml6ie9MrTrQodyEJdGSi0qEmxbKexCEjP8AJbWmj9yYfUoQpy6bcP2TlRj4kIWbqK/41Fk/+E+6VCApu+BPoIQkDJOhWH2kaHaLmbhdQvP4C0ITicvrXmjeqnjQhbOCrcXRWGdEqE0J29Apm9EIQSRqmb0QhAPCCUITJG4lROJQhBG2UIQgP//Z",
+      "schedule": "Wed, Tue ,Evening",
+      "departmentId": "04ea"
+    },
+    {
+      "id": "ea28",
+      "name": "Dr. Sushanta Kumer Saha",
+      "designation": "Specialist in Rheumatology",
+      "degree": "MBBS, BCS (Health)",
+      "photo": "https://www.felixhospital.com/sites/default/files/2024-08/dr-dk-gupta.webp",
+      "schedule": "Sat",
+      "departmentId": "bd68"
+    },
+    {
+      "id": "6c38",
+      "name": "Mehwish Rahman",
+      "designation": "Senior Consultant",
+      "degree": "Mbbs",
+      "photo": "data:image/jpeg;base64,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",
+      "schedule": "Sat,Sun,Thur",
+      "departmentId": "d3db"
+    },
+    {
+      "id": "e62f",
+      "name": "Sehzil Munjir Arish",
+      "designation": "Specialist",
+      "degree": "MBBS",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcxz8furzKc5vmRx63Kw-aU4VqmoJ3luSbrQ&s",
+      "schedule": "Tue",
+      "departmentId": "2eeb"
+    }
+  ],
+  "patientDocModel": [
+    {
+      "id": "5b4b",
+      "date": "01-4-2",
+      "name": "Suprova Shemanto",
+      "age": "25",
+      "gender": "Female ",
+      "contact": "01628195945",
+      "address": "Agargaon,dhaka",
+      "medicalHistory": "",
+      "reason": "fever",
+      "status": "",
+      "department": "medecine",
+      "doctorName": ""
+    },
+    {
+      "id": "5b4b",
+      "date": "01-6-2",
+      "name": "Atik Islam",
+      "age": "25",
+      "gender": "Male",
+      "contact": "0123456789",
+      "address": "Mohammadpur,dhaka",
+      "medicalHistory": "Headech,cold problem",
+      "reason": "fever",
+      "status": "",
+      "department": "medecine",
+      "doctorName": ""
+    }
+  ],
+  "reciptionistDocModel": [
+    {
+      "id": "9547",
+      "name": "Mehwish Rahman Innaya",
+      "email": "innaya@gmail.com",
+      "phone": "01234567890",
+      "address": "Gulshan Dhaka",
+      "gender": "female",
+      "photo": "inu",
+      "employeeId": "1234",
+      "position": "Cashier",
+      "department": "Aurthopedic",
+      "workHours": "6",
+      "role": ""
+    }
+  ],
+  "prescriptionModel": [
+    {
+      "id": "63ec",
+      "date": "2025-07-24",
+      "note": "fever",
+      "advice": "CBC",
+      "name": "Suprova Shemanto",
+      "age": "25",
+      "phone": "01628195945",
+      "gender": "Female",
+      "address": "Agargaon,dhaka"
+    },
+    {
+      "id": "b4ed",
+      "date": "2025-07-26",
+      "note": "Foot pain",
+      "advice": "x-ray",
+      "name": "Munjir Arish ",
+      "age": "20",
+      "phone": "0369852147",
+      "gender": "Male",
+      "address": "Dhaka"
+    },
+    {
+      "id": "0346",
+      "date": "2025-08-09",
+      "note": "fever",
+      "advice": "CBC",
+      "name": "Sathee Khanom",
+      "age": "26",
+      "phone": "369852147",
+      "gender": "Female",
+      "address": "Hazaribagh"
+    },
+    {
+      "id": "4f35",
+      "date": "2025-07-26",
+      "note": "Kidney point increase",
+      "advice": "CBC, ",
+      "name": "Rumpa Kamal",
+      "age": "45",
+      "phone": "098765432123",
+      "gender": "Female",
+      "address": "Azimpur"
+    },
+    {
+      "id": "5bf8",
+      "date": "2025-07-18",
+      "note": "Foot pain",
+      "advice": "CBC",
+      "name": "Atik Islam",
+      "age": "25",
+      "phone": "0162819963258",
+      "gender": "Male",
+      "address": "Agargaon,dhaka"
+    },
+    {
+      "id": "7f25",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "date": "2025-07-22T18:05:52.153Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        },
+        {
+          "testName": "MRI",
+          "testPrice": 0
+        }
+      ],
+      "note": "",
+      "advice": "",
+      "height": "",
+      "weight": "",
+      "bp": ""
+    },
+    {
+      "id": "1d11",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "date": "2025-07-22T18:05:52.153Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        },
+        {
+          "testName": "MRI",
+          "testPrice": 0
+        }
+      ],
+      "note": "",
+      "advice": "",
+      "height": "",
+      "weight": "",
+      "bp": ""
+    },
+    {
+      "id": "e7f8",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "date": "2025-07-22T18:05:52.153Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        },
+        {
+          "testName": "MRI",
+          "testPrice": 0
+        }
+      ],
+      "note": "",
+      "advice": "",
+      "height": "",
+      "weight": "",
+      "bp": ""
+    },
+    {
+      "id": "6649",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "e62f",
+        "name": "Sehzil Munjir Arish",
+        "designation": "Specialist",
+        "degree": "MBBS",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcxz8furzKc5vmRx63Kw-aU4VqmoJ3luSbrQ&s",
+        "schedule": "Tue",
+        "departmentId": "2eeb"
+      },
+      "date": "2025-07-22T18:21:39.322Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        }
+      ],
+      "note": "fever",
+      "advice": "take rest",
+      "height": "5.2",
+      "weight": "62",
+      "bp": "100/80"
+    },
+    {
+      "id": "3451",
+      "patientId": {
+        "id": "",
+        "name": "Rahim Khan",
+        "age": "28",
+        "gender": "Male",
+        "contact": "0987654321",
+        "address": "Muladi,Barishal",
+        "date": "",
+        "doctorName": "",
+        "medicalHistory": "",
+        "reason": "",
+        "status": "",
+        "department": ""
+      },
+      "doctorId": {
+        "id": "8b45",
+        "name": "Dr. Abu Md. Towab",
+        "designation": "Ex. Consultant ",
+        "degree": "MBBS, BCS (Health), MACP (USA), CCD (UK), MD (Cardiology)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Abu-Md.-Towab.jpg",
+        "schedule": "Fri-Sun",
+        "departmentId": "85ac"
+      },
+      "date": "2025-07-22T18:47:30.087Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        }
+      ],
+      "note": "Fever for 3days",
+      "advice": "Keep Your Mouth Shut",
+      "height": "5.8",
+      "weight": "60",
+      "bp": "120/80"
+    },
+    {
+      "id": "808f",
+      "patientId": {
+        "id": "",
+        "name": "Sadiar Rahman",
+        "age": "28",
+        "gender": "Male",
+        "contact": "0987654321",
+        "address": "Norail,Khulna",
+        "date": "",
+        "doctorName": "",
+        "medicalHistory": "",
+        "reason": "",
+        "status": "",
+        "department": ""
+      },
+      "doctorId": {
+        "id": "d005",
+        "name": "Dr. Md. Aminul Haque Palash",
+        "designation": "Consultant ",
+        "degree": "MBBS, BCS (Health), MD (Nephrology), MACP (USA), FCPS (Medicine, FP)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Md.-Aminul-Haque-Palash.jpg",
+        "schedule": "sun-fri",
+        "departmentId": "a1f9"
+      },
+      "date": "2025-07-22T18:47:30.087Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        }
+      ],
+      "note": "Fever for 3days",
+      "advice": "Take Rest",
+      "height": "5.9",
+      "weight": "55",
+      "bp": "120/80"
+    },
+    {
+      "id": "27d5",
+      "patientId": {
+        "id": "",
+        "name": "Rahmatullah",
+        "age": "27",
+        "gender": "Male",
+        "contact": "0987654321",
+        "address": "Shamoly,Dhaka",
+        "date": "",
+        "doctorName": "",
+        "medicalHistory": "",
+        "reason": "",
+        "status": "",
+        "department": ""
+      },
+      "doctorId": {
+        "id": "d005",
+        "name": "Dr. Md. Aminul Haque Palash",
+        "designation": "Consultant ",
+        "degree": "MBBS, BCS (Health), MD (Nephrology), MACP (USA), FCPS (Medicine, FP)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Md.-Aminul-Haque-Palash.jpg",
+        "schedule": "sun-fri",
+        "departmentId": "a1f9"
+      },
+      "date": "2025-07-22T18:47:30.087Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        }
+      ],
+      "note": "Fever for 3days",
+      "advice": "Take Rest",
+      "height": "5.6",
+      "weight": "60",
+      "bp": "120/80"
+    },
+    {
+      "id": "a0b8",
+      "patientId": {
+        "name": "Abdullah Al Masud",
+        "age": "28",
+        "gender": "Male",
+        "address": "Savar,Dhaka"
+      },
+      "doctorId": {
+        "id": "f31b",
+        "name": "Dr. Fariha Binte Quayum",
+        "designation": "Consultant",
+        "degree": "BDS, PGT, FCPS",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Fariha-Binte-Quayum.jpg",
+        "schedule": "mon, wed",
+        "departmentId": "04ea"
+      },
+      "date": "2025-07-22T20:16:49.842Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 0
+        }
+      ],
+      "medicines": [
+        {
+          "medicineName": "Alatrol"
+        },
+        {
+          "medicineName": "Rupa"
+        }
+      ],
+      "note": "Allergy, High BP",
+      "advice": "Do not take any red meet",
+      "height": "5'6",
+      "weight": "70",
+      "bp": "140/100",
+      "applyWay": ""
+    },
+    {
+      "id": "8456",
+      "patientId": {
+        "id": "",
+        "name": "",
+        "age": "",
+        "gender": "",
+        "contact": "01929601666",
+        "address": "",
+        "date": "",
+        "doctorName": "",
+        "medicalHistory": "",
+        "reason": "",
+        "status": "",
+        "department": ""
+      },
+      "doctorId": {},
+      "date": "2025-07-23T09:19:33.876Z",
+      "tests": [],
+      "medicines": [
+        {
+          "medicineName": ""
+        }
+      ],
+      "note": "",
+      "advice": "",
+      "height": "",
+      "weight": "",
+      "bp": "",
+      "applyWay": ""
+    },
+    {
+      "id": "24e8",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-6-2",
+        "name": "Atik Islam",
+        "age": "25",
+        "gender": "Male",
+        "contact": "0123456789",
+        "address": "Mohammadpur,dhaka",
+        "medicalHistory": "Headech,cold problem",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "ead5",
+        "name": "Dr. Tahmina Jannat",
+        "designation": "Consultant (General Surgery)",
+        "degree": "MBBS, MS (General surgery)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Tahmina-Jannat.jpg",
+        "schedule": "sat-mon",
+        "departmentId": "85ac"
+      },
+      "date": "2025-07-23T09:55:55.245Z",
+      "tests": [
+        {
+          "testName": "MRI",
+          "testPrice": 0
+        }
+      ],
+      "medicines": [
+        {
+          "medicineName": "Naprox 500",
+          "applyWay": "1+0+1"
+        },
+        {
+          "medicineName": "Napa",
+          "applyWay": "0+0+1"
+        }
+      ],
+      "note": "C-spine",
+      "advice": "Take rest",
+      "height": "5'5",
+      "weight": "62",
+      "bp": "120/80"
+    },
+    {
+      "id": "1c58",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-6-2",
+        "name": "Atik Islam",
+        "age": "25",
+        "gender": "Male",
+        "contact": "0123456789",
+        "address": "Mohammadpur,dhaka",
+        "medicalHistory": "Headech,cold problem",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "ead5",
+        "name": "Dr. Tahmina Jannat",
+        "designation": "Consultant (General Surgery)",
+        "degree": "MBBS, MS (General surgery)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Tahmina-Jannat.jpg",
+        "schedule": "sat-mon",
+        "departmentId": "85ac"
+      },
+      "date": "2025-07-23T09:55:55.245Z",
+      "tests": [
+        {
+          "testName": "MRI",
+          "testPrice": 0
+        }
+      ],
+      "medicines": [
+        {
+          "medicineName": "Naprox 500",
+          "applyWay": "1+0+1"
+        },
+        {
+          "medicineName": "Napa",
+          "applyWay": "0+0+1"
+        }
+      ],
+      "note": "C-spine",
+      "advice": "Take rest",
+      "height": "5'5",
+      "weight": "62",
+      "bp": "120/80"
+    },
+    {
+      "id": "4763",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-6-2",
+        "name": "Atik Islam",
+        "age": "25",
+        "gender": "Male",
+        "contact": "0123456789",
+        "address": "Mohammadpur,dhaka",
+        "medicalHistory": "Headech,cold problem",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "ead5",
+        "name": "Dr. Tahmina Jannat",
+        "designation": "Consultant (General Surgery)",
+        "degree": "MBBS, MS (General surgery)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Tahmina-Jannat.jpg",
+        "schedule": "sat-mon",
+        "departmentId": "85ac"
+      },
+      "date": "2025-07-23T09:55:55.245Z",
+      "tests": [
+        {
+          "testName": "MRI",
+          "testPrice": 0
+        }
+      ],
+      "medicines": [
+        {
+          "medicineName": "Naprox 500",
+          "applyWay": "1+0+1"
+        },
+        {
+          "medicineName": "Napa",
+          "applyWay": "0+0+1"
+        }
+      ],
+      "note": "C-spine",
+      "advice": "Take rest",
+      "height": "5'5",
+      "weight": "62",
+      "bp": "120/80"
+    }
+  ],
+  "reportModel": [
+    {
+      "id": "845d",
+      "doctorName": "",
+      "reportResult": "",
+      "description": "",
+      "sampleId": "",
+      "interpretation": "",
+      "patientName": "",
+      "testDate": "2025-07-02",
+      "createDate": "2025-07-09",
+      "deliveryDate": "2025-07-10"
+    },
+    {
+      "id": "48c2",
+      "doctorName": "Dr.Sayman",
+      "reportResult": "Positive",
+      "description": "mai kese kaho",
+      "sampleId": "",
+      "interpretation": "kuch bhi muje pata nehi",
+      "patientName": "Lunbna Kamal",
+      "testDate": "2025-07-05",
+      "createDate": "2025-07-05",
+      "deliveryDate": "2025-07-05"
+    }
+  ],
+  "ScheduleSlot": [
+    {
+      "id": "7785",
+      "doctorId": "d005",
+      "date": "2025-07-15",
+      "startTime": "19:00",
+      "endTime": "22:40",
+      "isBooked": true
+    },
+    {
+      "id": "a7ce",
+      "doctorId": "a5ea",
+      "date": "2025-07-10",
+      "startTime": "10:45",
+      "endTime": "14:30",
+      "isBooked": true
+    },
+    {
+      "id": "a277",
+      "doctorId": "ead5",
+      "date": "2025-07-26",
+      "startTime": "17:00",
+      "endTime": "20:00",
+      "isBooked": false
+    },
+    {
+      "id": "1285",
+      "doctorId": "f31b",
+      "date": "2025-07-30",
+      "startTime": "15:01",
+      "endTime": "21:50",
+      "isBooked": true
+    },
+    {
+      "id": "8842",
+      "doctorId": "8b45",
+      "date": "2025-07-23",
+      "startTime": "20:00",
+      "endTime": "23:59",
+      "isBooked": false
+    },
+    {
+      "id": "2f96",
+      "doctorId": "3b73",
+      "date": "2025-07-31",
+      "startTime": "09:00",
+      "endTime": "14:00",
+      "isBooked": false
+    },
+    {
+      "id": "8cf4",
+      "doctorId": "d005",
+      "date": "2025-07-17",
+      "startTime": "18:04",
+      "endTime": "22:04",
+      "isBooked": true
+    },
+    {
+      "id": "14cc",
+      "doctorId": "a5ea",
+      "date": "2025-07-24",
+      "startTime": "19:45",
+      "endTime": "20:00",
+      "isBooked": false
+    },
+    {
+      "id": "aeaf",
+      "doctorId": "a5ea",
+      "date": "2025-07-22",
+      "startTime": "20:01",
+      "endTime": "20:15",
+      "isBooked": false
+    },
+    {
+      "id": "8462",
+      "doctorId": "a5ea",
+      "date": "2025-07-24",
+      "startTime": "20:15",
+      "endTime": "20:30",
+      "isBooked": false
+    },
+    {
+      "id": "8f4a",
+      "doctorId": "a5ea",
+      "date": "2025-07-24",
+      "startTime": "20:31",
+      "endTime": "20:45",
+      "isBooked": false
+    },
+    {
+      "id": "c5e0",
+      "doctorId": "a5ea",
+      "date": "2025-07-24",
+      "startTime": "20:46",
+      "endTime": "21:00",
+      "isBooked": false
+    },
+    {
+      "id": "b04a",
+      "doctorId": "a5ea",
+      "date": "2025-07-24",
+      "startTime": "21:00",
+      "endTime": "21:15",
+      "isBooked": false
+    },
+    {
+      "id": "077f",
+      "doctorId": "a5ea",
+      "date": "2025-07-24",
+      "startTime": "21:16",
+      "endTime": "21:30",
+      "isBooked": false
+    },
+    {
+      "id": "8fc5",
+      "doctorId": "d005",
+      "date": "2025-07-24",
+      "startTime": "11:01",
+      "endTime": "11:19",
+      "isBooked": false
+    },
+    {
+      "id": "e476",
+      "doctorId": "d005",
+      "date": "2025-07-24",
+      "startTime": "11:21",
+      "endTime": "11:40",
+      "isBooked": false
+    },
+    {
+      "id": "f2da",
+      "doctorId": "d005",
+      "date": "2025-07-24",
+      "startTime": "11:41",
+      "endTime": "12:00",
+      "isBooked": false
+    },
+    {
+      "id": "d230",
+      "doctorId": "d005",
+      "date": "2025-07-24",
+      "startTime": "12:01",
+      "endTime": "12:20",
+      "isBooked": false
+    },
+    {
+      "id": "2afa",
+      "doctorId": "d005",
+      "date": "2025-07-24",
+      "startTime": "12:21",
+      "endTime": "12:40",
+      "isBooked": false
+    },
+    {
+      "id": "1789",
+      "doctorId": "d005",
+      "date": "2025-07-24",
+      "startTime": "12:41",
+      "endTime": "13:00",
+      "isBooked": false
+    },
+    {
+      "id": "6d08",
+      "doctorId": "ead5",
+      "date": "2025-07-26",
+      "startTime": "17:00",
+      "endTime": "17:20",
+      "isBooked": false
+    },
+    {
+      "id": "6405",
+      "doctorId": "ead5",
+      "date": "2025-07-26",
+      "startTime": "17:21",
+      "endTime": "17:40",
+      "isBooked": false
+    },
+    {
+      "id": "332b",
+      "doctorId": "ead5",
+      "date": "2025-07-26",
+      "startTime": "17:41",
+      "endTime": "18:00",
+      "isBooked": false
+    },
+    {
+      "id": "9128",
+      "doctorId": "ead5",
+      "date": "2025-07-26",
+      "startTime": "18:00",
+      "endTime": "18:20",
+      "isBooked": false
+    },
+    {
+      "id": "8b09",
+      "doctorId": "ead5",
+      "date": "2025-07-26",
+      "startTime": "18:21",
+      "endTime": "18:40",
+      "isBooked": false
+    },
+    {
+      "id": "bccf",
+      "doctorId": "ead5",
+      "date": "2025-07-26",
+      "startTime": "18:41",
+      "endTime": "19:00",
+      "isBooked": false
+    },
+    {
+      "id": "baa3",
+      "doctorId": "f31b",
+      "date": "2025-07-27",
+      "startTime": "10:00",
+      "endTime": "10:25",
+      "isBooked": false
+    },
+    {
+      "id": "4a04",
+      "doctorId": "f31b",
+      "date": "2025-07-27",
+      "startTime": "10:26",
+      "endTime": "10:50",
+      "isBooked": false
+    },
+    {
+      "id": "6ec9",
+      "doctorId": "f31b",
+      "date": "2025-07-27",
+      "startTime": "10:51",
+      "endTime": "11:15",
+      "isBooked": false
+    },
+    {
+      "id": "9165",
+      "doctorId": "f31b",
+      "date": "2025-07-27",
+      "startTime": "11:16",
+      "endTime": "11:40",
+      "isBooked": false
+    },
+    {
+      "id": "9c34",
+      "doctorId": "f31b",
+      "date": "2025-07-27",
+      "startTime": "11:41",
+      "endTime": "12:05",
+      "isBooked": false
+    },
+    {
+      "id": "c4d9",
+      "doctorId": "f31b",
+      "date": "2025-07-27",
+      "startTime": "12:06",
+      "endTime": "12:30",
+      "isBooked": false
+    },
+    {
+      "id": "c6cd",
+      "doctorId": "8b45",
+      "date": "2025-07-29",
+      "startTime": "16:00",
+      "endTime": "16:15",
+      "isBooked": false
+    },
+    {
+      "id": "95fe",
+      "doctorId": "8b45",
+      "date": "2025-07-29",
+      "startTime": "16:16",
+      "endTime": "16:30",
+      "isBooked": false
+    },
+    {
+      "id": "861d",
+      "doctorId": "8b45",
+      "date": "2025-07-29",
+      "startTime": "16:31",
+      "endTime": "16:45",
+      "isBooked": false
+    },
+    {
+      "id": "0419",
+      "doctorId": "8b45",
+      "date": "2025-07-29",
+      "startTime": "16:45",
+      "endTime": "17:00",
+      "isBooked": false
+    },
+    {
+      "id": "1f6f",
+      "doctorId": "8b45",
+      "date": "2025-07-29",
+      "startTime": "17:20",
+      "endTime": "17:35",
+      "isBooked": false
+    },
+    {
+      "id": "06fa",
+      "doctorId": "3b73",
+      "date": "2025-07-31",
+      "startTime": "14:30",
+      "endTime": "14:45",
+      "isBooked": false
+    },
+    {
+      "id": "1acf",
+      "doctorId": "3b73",
+      "date": "2025-07-31",
+      "startTime": "14:46",
+      "endTime": "15:00",
+      "isBooked": false
+    },
+    {
+      "id": "49ec",
+      "doctorId": "3b73",
+      "date": "2025-07-31",
+      "startTime": "15:01",
+      "endTime": "15:15",
+      "isBooked": false
+    },
+    {
+      "id": "f2c1",
+      "doctorId": "3b73",
+      "date": "2025-07-31",
+      "startTime": "15:16",
+      "endTime": "15:30",
+      "isBooked": false
+    },
+    {
+      "id": "c21d",
+      "doctorId": "3b73",
+      "date": "2025-07-31",
+      "startTime": "15:31",
+      "endTime": "15:45",
+      "isBooked": false
+    },
+    {
+      "id": "1fe4",
+      "doctorId": "3b73",
+      "date": "2025-07-31",
+      "startTime": "15:45",
+      "endTime": "16:00",
+      "isBooked": false
+    }
+  ],
+  "appointments": [
+    {
+      "id": "25f5",
+      "departmentId": "a1f9",
+      "doctorId": "d005",
+      "scheduleSlotId": "7785",
+      "patientName": "Halima Akter",
+      "patientContact": "fdsgsdggfd",
+      "reason": "Fever"
+    },
+    {
+      "id": "923c",
+      "departmentId": "a1f9",
+      "doctorId": "a5ea",
+      "scheduleSlotId": "a7ce",
+      "patientName": "Atik Islam",
+      "patientContact": "0147852369",
+      "reason": "pain"
+    },
+    {
+      "id": "eedb",
+      "departmentId": "a1f9",
+      "doctorId": "d005",
+      "scheduleSlotId": "7785",
+      "patientName": "sa",
+      "patientContact": "wda",
+      "reason": "aadd"
+    },
+    {
+      "id": "8840",
+      "departmentId": "a1f9",
+      "doctorId": "d005",
+      "scheduleSlotId": "8cf4",
+      "patientName": "test",
+      "patientContact": "01777777777",
+      "reason": "lkmn"
+    },
+    {
+      "id": "4d69",
+      "departmentId": "04ea",
+      "doctorId": "f31b",
+      "scheduleSlotId": "1285",
+      "patientName": "monir",
+      "patientContact": "01785976184",
+      "reason": "Fever for 7 days"
+    },
+    {
+      "id": "b689",
+      "departmentId": "a1f9",
+      "doctorId": "a5ea",
+      "scheduleSlotId": "a7ce",
+      "patientName": "Imran Mia",
+      "patientContact": "0123654789",
+      "reason": ""
+    }
+  ],
+  "testModel": [
+    {
+      "id": "50880c9a-e2f1-454c-bfee-3c93ed6c7b4b",
+      "testName": "CBC",
+      "testPrice": 400
+    },
+    {
+      "id": "313402f0-0873-4112-b04d-d1918d241ae3",
+      "testName": "MRI",
+      "testPrice": 6000
+    },
+    {
+      "id": "fbd0cec4-7704-46b6-9da0-38f34a55440e",
+      "testName": "CT Scan",
+      "testPrice": 10500
+    },
+    {
+      "id": "035c801e-4a4b-4a44-8f0c-b921a8facac8",
+      "testName": "X-Ray Cest",
+      "testPrice": 800
+    },
+    {
+      "id": "649fc363-4358-4810-874f-c0b23d0fdd3a",
+      "testName": "NSI",
+      "testPrice": 500
+    },
+    {
+      "id": "fb84ec16-9f9d-4571-b6e7-2be980a047f4",
+      "testName": "\tSGPT (ALT)",
+      "testPrice": 350
+    },
+    {
+      "id": "695fc709-ddb4-4e24-8c36-3fe05b198c82",
+      "testName": "\tAnti HAV - IgM",
+      "testPrice": 1200
+    },
+    {
+      "id": "5f4bbbfd-e46b-46f8-9f3e-c75c96cc4919",
+      "testName": "\tAlkaline phosphatase",
+      "testPrice": 400
+    },
+    {
+      "id": "74474949-52c8-42a9-a054-7590f94f3205",
+      "testName": "\tAnti- TPO Ab",
+      "testPrice": 1200
+    },
+    {
+      "id": "eae27204-78c3-4df4-9ca1-f4a44f76282f",
+      "testName": "\t2 hrs Postprandial Plasma glucose",
+      "testPrice": 1200
+    },
+    {
+      "id": "7d44f07e-5f6c-4b5c-87a9-1abcfe40db3e",
+      "testName": "Endoscopy",
+      "testPrice": 4500
+    },
+    {
+      "id": "587ba194-bfc8-4170-82fb-2837152411fb",
+      "testName": "\tCBC, ESR",
+      "testPrice": 600
+    },
+    {
+      "id": "64273b6a-27ba-47f2-aa7d-64aee3381a7e",
+      "testName": "Haemoglobin (Hb)",
+      "testPrice": 200
+    },
+    {
+      "id": "218590b9-992a-4438-a240-97d502b517c9",
+      "testName": "\tESR",
+      "testPrice": 200
+    },
+    {
+      "id": "a8403bce-64a4-4fe5-8a24-feace77917b7",
+      "testName": "\tTC, DC, Hb%, ESR",
+      "testPrice": 300
+    },
+    {
+      "id": "3cfe9360-3d3b-4d2e-a9c3-d8d1889d0762",
+      "testName": "\tHCT/PCV",
+      "testPrice": 250
+    },
+    {
+      "id": "fa84d34b-f8f3-4ebc-a373-57585a33f451",
+      "testName": "Circulating Eosinophil Count (CE Count)",
+      "testPrice": 300
+    },
+    {
+      "id": "831938e1-8381-433e-a6fe-219b21cc2003",
+      "testName": "Reticulocyte Count",
+      "testPrice": 300
+    },
+    {
+      "id": "3ea8cbdb-a47b-44e1-97b1-adadd9e838e7",
+      "testName": "Kidney Function Tests-KFT (Creat., Urea, BUN, Uric Acid, Calcium)",
+      "testPrice": 2000
+    },
+    {
+      "id": "bbc3862d-1ec9-48e7-be50-511801c2f328",
+      "testName": "LDH",
+      "testPrice": 1000
+    },
+    {
+      "id": "17bf9fd2-25fe-4138-883b-f790dbd1b84d",
+      "testName": "\tTotal Acid Phosphatase",
+      "testPrice": 800
+    },
+    {
+      "id": "6ff99d24-7fad-40fa-ad8f-88cfe3a1dfc1",
+      "testName": "\tLipid Profile (Cholesterol, HDL, LDL, TG, Chol/HDL Ratio)",
+      "testPrice": 1800
+    },
+    {
+      "id": "ec3ebb7b-366e-4eae-a00f-6c6f72456921",
+      "testName": "Serum Inorganic Phosphate (PO4)",
+      "testPrice": 700
+    }
+  ],
+  "medicine": [
+    {
+      "id": "52e4a24d-16d9-476c-a52d-c71382584499",
+      "medicineName": "Napa"
+    },
+    {
+      "id": "f2a36847-df4e-4b4a-89bb-e0a92f36681e",
+      "medicineName": "Amoxicillin"
+    },
+    {
+      "id": "3b6f764b-075e-47a8-91a6-df39ca6213f6",
+      "medicineName": "Lisinopril"
+    },
+    {
+      "id": "dc0381a2-a647-4b0a-97b8-c420b05ba45a",
+      "medicineName": "Metformin"
+    },
+    {
+      "id": "19656cca-580b-44f9-a763-c5e3c8a2d676",
+      "medicineName": "Empa 10"
+    },
+    {
+      "id": "be093a82-ced4-47c9-b742-448ddf6c6d00",
+      "medicineName": "Linaglip-M 2.5/500"
+    },
+    {
+      "id": "54730722-103f-47bb-92c7-69664f27f046",
+      "medicineName": "RTV 10"
+    },
+    {
+      "id": "29fa0ec6-c13f-47dd-a7cc-d94031e068f7",
+      "medicineName": "Anclog Plus"
+    },
+    {
+      "id": "d815987c-cc3a-4b1b-8d25-217fd61fc8da",
+      "medicineName": "Numira 2.5"
+    },
+    {
+      "id": "c8cfed6f-ec1a-492e-84e4-2a941092b4ec",
+      "medicineName": "Tems 40"
+    },
+    {
+      "id": "5d880b8a-46ba-40fb-836f-67af1a4710f6",
+      "medicineName": "Lasix 40"
+    },
+    {
+      "id": "4afe59eb-a9b8-423c-9d3c-f3857ff655bb",
+      "medicineName": "D-Balance 20000"
+    },
+    {
+      "id": "351985b7-b333-4d64-b754-0fabaf8d5d3b",
+      "medicineName": "Frulac 40"
+    },
+    {
+      "id": "ba2e92b0-b07c-43b0-bb8c-2df5f1aa436f",
+      "medicineName": "LNC 5"
+    },
+    {
+      "id": "aa55b085-0a04-4b3a-bbb3-00bf99a0c7bc",
+      "medicineName": "NapaDol"
+    },
+    {
+      "id": "bfc355e7-b529-4488-af13-7f49da1b84bc",
+      "medicineName": "Napa One"
+    },
+    {
+      "id": "ddf15241-d728-4ad3-9b2d-c0e0eb414217",
+      "medicineName": "Alatrol"
+    },
+    {
+      "id": "f4a9440a-fc67-481b-9fda-31201eb99fcf",
+      "medicineName": "Rupa"
+    },
+    {
+      "id": "d3a3d6a7-7edd-4e9f-b95e-aa2332e6079d",
+      "medicineName": "Fexo"
+    },
+    {
+      "id": "33b5260f-3f8a-470b-9ec3-f56c72b55cd2",
+      "medicineName": "Fenat"
+    },
+    {
+      "id": "b062f49b-bb46-4c48-b197-a316418ca7b9",
+      "medicineName": "Naprox 500",
+      "applyWay": ""
+    },
+    {
+      "id": "b80da0ea-e656-45ba-b18a-d4fc98f2a9b5",
+      "medicineName": "Asmasol",
+      "applyWay": ""
+    }
+  ],
+  "manufacture": [
+    {
+      "id": "2d89",
+      "manufacturerName": "PQR Pharmacy",
+      "address": "Gazipur",
+      "contactNumber": "098765432",
+      "email": "pqr@gmail.com"
+    },
+    {
+      "id": "425b",
+      "manufacturerName": "NPM ",
+      "address": "Agargaon,dhaka",
+      "contactNumber": "01609876543",
+      "email": "npm@gmail.com"
+    },
+    {
+      "id": "d081",
+      "manufacturerName": "sup",
+      "address": "lkjkl",
+      "contactNumber": "09876",
+      "email": "suprova@gmail.com"
+    }
+  ],
+  "testInvoice": [
+    {
+      "id": "301c",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "invoiceDate": "2025-07-22T09:34:18.114Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 400
+        },
+        {
+          "testName": "MRI",
+          "testPrice": 6000
+        },
+        {
+          "testName": "CT Scan",
+          "testPrice": 10500
+        }
+      ],
+      "amount": 16900,
+      "discount": 10,
+      "totalAmount": 16890,
+      "totalDiscount": 10,
+      "payable": 16890,
+      "received": 10000,
+      "due": 6890,
+      "deliveryDate": "2025-07-22T09:34:18.114Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "1a34",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "invoiceDate": "2025-07-22T09:57:36.730Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 400
+        },
+        {
+          "testName": "CT Scan",
+          "testPrice": 10500
+        }
+      ],
+      "amount": 10900,
+      "discount": 10,
+      "totalAmount": 10890,
+      "totalDiscount": 10,
+      "payable": 10890,
+      "received": 10000,
+      "due": 890,
+      "deliveryDate": "2025-07-22T09:57:36.730Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "b172",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "invoiceDate": "2025-07-22T09:57:36.730Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 400
+        },
+        {
+          "testName": "CT Scan",
+          "testPrice": 10500
+        }
+      ],
+      "amount": 10900,
+      "discount": 10,
+      "totalAmount": 10890,
+      "totalDiscount": 10,
+      "payable": 10890,
+      "received": 10000,
+      "due": 890,
+      "deliveryDate": "2025-07-22T09:57:36.730Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "159d",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "invoiceDate": "2025-07-22T10:02:36.905Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 400
+        },
+        {
+          "testName": "MRI",
+          "testPrice": 6000
+        }
+      ],
+      "amount": 6400,
+      "discount": 150,
+      "totalAmount": 6250,
+      "totalDiscount": 150,
+      "payable": 6250,
+      "received": 5000,
+      "due": 1250,
+      "deliveryDate": "2025-07-22T10:02:36.905Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "4adc",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "invoiceDate": "2025-07-22T10:02:36.905Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 400
+        },
+        {
+          "testName": "MRI",
+          "testPrice": 6000
+        }
+      ],
+      "amount": 6400,
+      "discount": 150,
+      "totalAmount": 6250,
+      "totalDiscount": 150,
+      "payable": 6250,
+      "received": 5000,
+      "due": 1250,
+      "deliveryDate": "2025-07-22T10:02:36.905Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "04d5",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-6-2",
+        "name": "Atik Islam",
+        "age": "25",
+        "gender": "Male",
+        "contact": "0123456789",
+        "address": "Mohammadpur,dhaka",
+        "medicalHistory": "Headech,cold problem",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "e62f",
+        "name": "Sehzil Munjir Arish",
+        "designation": "Specialist",
+        "degree": "MBBS",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcxz8furzKc5vmRx63Kw-aU4VqmoJ3luSbrQ&s",
+        "schedule": "Tue",
+        "departmentId": "2eeb"
+      },
+      "invoiceDate": "2025-07-22T10:02:36.905Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 400
+        },
+        {
+          "testName": "Haemoglobin (Hb)",
+          "testPrice": 200
+        }
+      ],
+      "amount": 600,
+      "discount": 60,
+      "totalAmount": 540,
+      "totalDiscount": 60,
+      "payable": 540,
+      "received": 300,
+      "due": 240,
+      "deliveryDate": "2025-07-22T10:02:36.905Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "5d4c",
+      "patientId": {},
+      "doctorId": {},
+      "invoiceDate": "2025-07-22T10:19:16.899Z",
+      "tests": [],
+      "amount": 0,
+      "discount": 0,
+      "totalAmount": 0,
+      "totalDiscount": 0,
+      "payable": 0,
+      "received": 0,
+      "due": 0,
+      "deliveryDate": "2025-07-22T10:19:16.899Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "daf1",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-6-2",
+        "name": "Atik Islam",
+        "age": "25",
+        "gender": "Male",
+        "contact": "0123456789",
+        "address": "Mohammadpur,dhaka",
+        "medicalHistory": "Headech,cold problem",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "invoiceDate": "2025-07-22T10:34:14.089Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 400
+        },
+        {
+          "testName": "MRI",
+          "testPrice": 6000
+        }
+      ],
+      "amount": 6400,
+      "discount": 400,
+      "totalAmount": 6000,
+      "totalDiscount": 400,
+      "payable": 6000,
+      "received": 2000,
+      "due": 4000,
+      "deliveryDate": "2025-07-22T10:34:14.089Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    },
+    {
+      "id": "60a9",
+      "patientId": {
+        "id": "5b4b",
+        "date": "01-4-2",
+        "name": "Suprova Shemanto",
+        "age": "25",
+        "gender": "Female ",
+        "contact": "01628195945",
+        "address": "Agargaon,dhaka",
+        "medicalHistory": "",
+        "reason": "fever",
+        "status": "",
+        "department": "medecine",
+        "doctorName": ""
+      },
+      "doctorId": {
+        "id": "a5ea",
+        "name": "Prof. Dr. H. A.Nazmul Hakim (Shaheen)",
+        "designation": "Senior Consultant",
+        "degree": "MBBS(DMCH)",
+        "photo": "https://www.doctorbangladesh.com/wp-content/uploads/2025/07/Dr.-Suman-Ghosh.jpg",
+        "schedule": "Mon,Wed,Sun",
+        "departmentId": "a1f9"
+      },
+      "invoiceDate": "2025-07-23T09:18:44.988Z",
+      "tests": [
+        {
+          "testName": "CBC",
+          "testPrice": 600
+        }
+      ],
+      "amount": 600,
+      "discount": 0,
+      "totalAmount": 600,
+      "totalDiscount": 0,
+      "payable": 600,
+      "received": 0,
+      "due": 600,
+      "deliveryDate": "2025-07-23T09:18:44.988Z",
+      "deliveryTime": 0,
+      "status": false,
+      "preparedBy": ""
+    }
+  ]
+}
